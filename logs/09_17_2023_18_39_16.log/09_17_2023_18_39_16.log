@@ -1,0 +1,10 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-607-179
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 18:39:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 18:39:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 18:39:55] "GET /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 18:41:16] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 18:41:17] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 18:41:17] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 18:41:17] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 18:41:17] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

@@ -1,0 +1,27 @@
+INFO:root:DATA INGESTION STARTED
+INFO:root:dataset read as pd
+INFO:root:   Cement (component 1)(kg in a m^3 mixture)  ...  Concrete compressive strength(MPa, megapascals) 
+1                                      540.0  ...                                         61.887366
+2                                      332.5  ...                                         40.269535
+3                                      332.5  ...                                         41.052780
+4                                      198.6  ...                                         44.296075
+5                                      266.0  ...                                         47.029847
+
+[5 rows x 9 columns]
+INFO:root:   Cement (component 1)(kg in a m^3 mixture)  ...  Concrete compressive strength(MPa, megapascals) 
+0                                      540.0  ...                                         61.887366
+1                                      332.5  ...                                         40.269535
+2                                      332.5  ...                                         41.052780
+3                                      198.6  ...                                         44.296075
+4                                      266.0  ...                                         47.029847
+
+[5 rows x 9 columns]
+INFO:root:OUTLIERS ARE REMOVED
+INFO:root:(1026, 9)
+INFO:root:train data and test data taken
+INFO:root:1 (820, 10)
+INFO:root:shape (820, 9)
+INFO:root:model report {'LINEAR_REGRESSION ': 0.5568776677568543, 'LASSO ': 0.16697719970940494, 'Ridge ': 0.5595254752338209, 'RANDOM_FOREST_REGRESSION ': 0.9324654842467485, 'Gradient_boosting_algorithm ': 0.9240809612583835, 'KNN ': 0.6091738547263079}
+INFO:root:BEST MODEL IS RANDOM_FOREST_REGRESSION  WITH ACCURACY 0.9324654842467485
+INFO:root:Shape here (820, 9)
+INFO:root:accuaracy 0.9299194279383486

@@ -1,0 +1,18 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-607-179
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:39:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:39:35] "GET /predict HTTP/1.1" 200 -
+INFO:root:1
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:39:50] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:40:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:40:09] "GET /predict HTTP/1.1" 200 -
+INFO:root:1
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:41:36] "POST /predict HTTP/1.1" 200 -

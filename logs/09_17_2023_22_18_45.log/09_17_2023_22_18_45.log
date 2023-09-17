@@ -1,0 +1,16 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-607-179
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:18:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:18:57] "GET /predict HTTP/1.1" 200 -
+INFO:root:1
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:werkzeug: * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:19:09] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Shrian Singh\\anaconda3\\Lib\\threading.py', reloading

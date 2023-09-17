@@ -1,0 +1,32 @@
+INFO:root:DATA INGESTION STARTED
+INFO:root:dataset read as pd
+INFO:root:(1026, 9)
+INFO:root:   Cement (component 1)(kg in a m^3 mixture)  ...  Concrete compressive strength(MPa, megapascals) 
+0                                      540.0  ...                                         61.887366
+1                                      332.5  ...                                         40.269535
+2                                      332.5  ...                                         41.052780
+3                                      198.6  ...                                         44.296075
+4                                      266.0  ...                                         47.029847
+
+[5 rows x 9 columns]
+INFO:root:OUTLIERS ARE REMOVED
+INFO:root:(1026, 9)
+INFO:root:   Cement (component 1)(kg in a m^3 mixture)  ...  Concrete compressive strength(MPa, megapascals) 
+0                                      307.0  ...                                         32.922479
+1                                      212.0  ...                                         47.815161
+2                                      382.5  ...                                         37.437857
+3                                      446.0  ...                                         57.026560
+4                                      102.0  ...                                         25.460970
+
+[5 rows x 9 columns]
+INFO:root:   Cement (component 1)(kg in a m^3 mixture)  ...  Concrete compressive strength(MPa, megapascals) 
+0                                     165.00  ...                                         26.200088
+1                                     393.00  ...                                         39.604880
+2                                     333.00  ...                                         47.277369
+3                                     379.50  ...                                         47.098106
+4                                     190.34  ...                                         19.415644
+
+[5 rows x 9 columns]
+INFO:root:train data and test data taken
+INFO:root:1 (820, 9)
+INFO:root:shape (820, 8)

@@ -1,0 +1,3 @@
+INFO:root:DATA INGESTION STARTED
+INFO:root:dataset read as pd
+INFO:root:OUTLIERS ARE REMOVED

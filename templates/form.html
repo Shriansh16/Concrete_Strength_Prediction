@@ -1,0 +1,127 @@
+<html>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Adjust padding */
+    width: 300px; /* Adjust width */
+  }
+
+  .form-group {
+    margin-bottom: 15px; /* Adjust margin */
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px; /* Adjust margin */
+    color: #333;
+    font-size: 12px; /* Adjust font size */
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    padding: 8px; /* Adjust padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px; /* Adjust font size */
+  }
+
+  select {
+    cursor: pointer;
+  }
+
+  input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  hr {
+    margin: 15px 0; /* Adjust margin */
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  #final-result {
+    font-size: 14px; /* Adjust font size */
+    margin-top: 15px; /* Adjust margin */
+    color: #007bff;
+  }
+</style>
+</head>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="CementComponent">CementComponent:</label>
+        <input type="text" id="CementComponent" name="CementComponent" placeholder="Enter Cement Component (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="BlastFurnaceSlag">BlastFurnaceSlag:</label>
+        <input type="text" id="BlastFurnaceSlag" name="BlastFurnaceSlag" placeholder="Enter Blast Furnace Component (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="FlyAsh">FlyAsh:</label>
+        <input type="text" id="FlyAsh" name="FlyAsh" placeholder="Enter Fly Ash Component (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="Water">Water:</label>
+        <input type="text" id="Water" name="Water" placeholder="Enter Water Component (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Superplasticizer">Superplasticizer:</label>
+        <input type="text" id="Superplasticizer" name="Superplasticizer" placeholder="Enter Superplasticizer Component (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="CoarseAggregate">CoarseAggregate:</label>
+        <input type="text" id="CoarseAggregate" name="CoarseAggregate" placeholder="Enter Coarse Aggregate Component (float)">
+    </div>         
+  
+    <div class="form-group">
+      <label for="FineAggregate">FineAggregate:</label>
+      <input type="text" id="FineAggregate" name="FineAggregate" placeholder="Enter Fine Aggregate Component (float)">
+  </div>
+  
+    <div class="form-group">
+    <label for="Age">Age:</label>
+    <input type="number" id="Age" name="Age" placeholder="Enter Age of Concrete">
+  </div>
+
+
+
+    <div style="clear:both;"></div>
+    <input type="submit" value="Submit">
+</form>
+
+<div id="Concrete compressive strength">
+    {{final_result}}
+</div>
+</body>
+</html>

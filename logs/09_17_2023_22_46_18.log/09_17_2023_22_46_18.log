@@ -1,0 +1,12 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 111-607-179
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:46:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:46:27] "GET /predict HTTP/1.1" 200 -
+INFO:root:1
+INFO:root:2
+INFO:root:3
+INFO:root:4
+INFO:root:5
+INFO:werkzeug:127.0.0.1 - - [17/Sep/2023 22:46:42] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'd:\\Cement_Strength_Prediction\\src\\pipelines\\training_pipeline.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\Cement_Strength_Prediction\\src\\pipelines\\training_pipeline.py', reloading
