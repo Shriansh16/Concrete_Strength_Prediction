@@ -26,11 +26,11 @@ class ModelTrainer:
             y_train=training_arr[:,-1]
             X_test=test_arr[:,:-1]
             y_test=test_arr[:,-1]
-            '''
+            
             models={
                 "LINEAR_REGRESSION ":LinearRegression(),
                 "LASSO ":Lasso(),"Ridge ":Ridge(),
-                #"RANDOM_FOREST_REGRESSION ":RandomForestRegressor(),
+                "RANDOM_FOREST_REGRESSION ":RandomForestRegressor(),
                 "Gradient_boosting_algorithm ":GradientBoostingRegressor(),
                 "KNN ":KNeighborsRegressor()
             }
@@ -43,19 +43,11 @@ class ModelTrainer:
             print('BEST MODEL FOUND ', best_model_name, ' WITH ACCURACY ',best_model_score)
             best_model=models[best_model_name]
             logging.info(f'Shape here {X_train.shape}')
-            best_model.fit(X_train,y_train)'''
-            rfc=RandomForestRegressor()
-            rfc.fit(X_train,y_train)
-            y_pred=rfc.predict(X_test)
-            print(r2_score(y_test,y_pred))
-            ij=rfc.predict([[540.0,0.0,0.0,162.0,2.5,1040.0,676.0,28]])
-            lk=rfc.predict([[260.9,100.5,78.3,200.6,8.6,864.5,761.5,28]])
-            print(ij)
-            print(lk)
-            save_object(self.model_trainer_config.training_data_path,rfc)
-            #y_pred11=best_model.predict(X_test)
-            #logging.info(f'accuaracy {r2_score(y_test,y_pred11)}')
-            #save_object(self.model_trainer_config.training_data_path,best_model)
+            best_model.fit(X_train,y_train)
+          
+            y_pred11=best_model.predict(X_test)
+            logging.info(f'accuaracy {r2_score(y_test,y_pred11)}')
+            save_object(self.model_trainer_config.training_data_path,best_model)
 
         except Exception as e:
             logging.info("ERROR OCCURED IN MODEL TRAINING")
